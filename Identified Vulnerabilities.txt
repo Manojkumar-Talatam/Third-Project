@@ -1,0 +1,71 @@
+ Identified Vulnerabilities and Their Severity:
+
+1. SSL Self-Signed Certificate
+
+Severity: Medium
+
+Description: Server uses a self-signed SSL certificate.
+
+Mitigation: Purchase and install an SSL certificate from a trusted Certificate Authority (CA).
+
+
+
+2. TLS Version 1.0 and 1.1 Enabled
+
+Severity: High
+
+Description: Obsolete versions of TLS are supported, which are known to be insecure.
+
+Mitigation: Disable TLS 1.0/1.1 and enforce TLS 1.2 or TLS 1.3.
+
+
+
+3. Missing Security Headers (e.g., X-Frame-Options, X-XSS-Protection)
+
+Severity: Medium
+
+Description: HTTP security headers are not set, exposing users to browser-based attacks.
+
+Mitigation: Add necessary headers in server configurations (e.g., Apache or NGINX settings).
+
+
+
+4. Directory Listing Enabled
+
+Severity: Medium
+
+Description: Web server directory listing is enabled, exposing file structures.
+
+Mitigation: Disable directory listing via server config.
+
+
+
+5. Outdated Software/Plugins
+
+Severity: High
+
+Description: Use of outdated web frameworks or plugins with known CVEs.
+
+Mitigation: Update all software, frameworks, and plugins to the latest stable versions.
+
+Among the above listed vulnerabilities,
+
+Most Critical Vulnerabilities :
+
+1. Obsolete TLS Versions (TLS 1.0/1.1)
+
+Severity: High
+
+Risk: Vulnerable to encryption downgrade attacks.
+
+Fix: Disable TLS 1.0/1.1 and use TLS 1.2 or 1.3.
+
+
+
+2. Outdated Software/Plugins
+
+Severity: High
+
+Risk: Known exploits can be used against outdated components.
+
+Fix: Update all software, frameworks, and plugins to the latest versions.
